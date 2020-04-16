@@ -1,23 +1,23 @@
 class Stream:
-    def __init__(self, stream):
-        self.process(stream)
-        data: list = self.read(stream)
-        ratio: dict = self.get_ratio(data)
-        frequency: dict = self.get_frecuency(data)
-        ramp: dict = self.get_ramp(data)
+    def __init__(self, handle):
+        self.handle = handle
+        self.data = ""
+        self.ratio = {}
+        self.frequency = {}
+        self.ramp = {}
 
-    def read(self, stream):
-        data = []
-        return data
+    def read(self, handle):
+        # Do something with handle
+        return self.data
 
     def get_ratio(self, data):
-        ratio = {}
-        return ratio
+        # Calculate ratio
+        return self.ratio
 
     def get_frecuency(self, data):
-        frequency = {}
-        return frequency
+        # Calculate frequency
+        return self.frequency
 
     def get_ramp(self, data):
-        ramp = {}
-        return ramp
+        # Calculate ramp
+        return self.ramp

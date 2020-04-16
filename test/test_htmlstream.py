@@ -1,27 +1,18 @@
 import pytest
 import requests
-
 from karen import htmlstream
 
-URL = requests.get("https://en.wikipedia.org/wiki/User_Datagram_Protocol")
+URL = "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+
+
+@pytest.fixture
+def create_htmlstream():
+    return htmlstream.HtmlStream(URL)
 
 
 @pytest.mark.htmlstream
-def test_read():
-    data = htmlstream.HtmlStream.read(URL)
-    assert data is list, "Failed to fetch URL."
+def test_read(create_htmlstream):
+    htmlstream.HtmlStream.read(create_htmlstream, URL)
+    assert type(create_htmlstream.data) == str, "HtmlStream.data is not string."
 
-
-@pytest.mark.htmlstream
-def test_get_ratio():
-    assert False
-
-
-def test_get_frecuency():
-    assert False
-
-
-@pytest.mark.htmlstream
-def test_get_ramp():
-    assert False
 
