@@ -1,5 +1,6 @@
 import karen.polling as polling
 import karen.pd as pd
+import selfspy
 
 
 BACK = ['1', 'w']
@@ -32,3 +33,5 @@ def tests(args):
         polling.ratios(ACTIVE_SECONDS, BACK)
     if args == "pd":
         pd.printvalues(VALUES)
+    if args == "start-selfspy":
+        selfspy.main()
