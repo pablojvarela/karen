@@ -9,8 +9,8 @@ class SelfspyStream(Stream):
     def get_ratio(self, data):
         return super().get_ratio(data)
 
-    def get_frecuency(self, data):
-        return super().get_frecuency(data)
+    def get_frequency(self, data):
+        return super().get_frequency(data)
 
     def get_ramp(self, data):
         return super().get_ramp(data)

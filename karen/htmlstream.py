@@ -1,8 +1,9 @@
+import collections
 import requests
 from karen import stream
 
 
-class HtmlStream(stream.Stream):
+class HTMLStream(stream.Stream):
     def __init__(self, url):
         super().__init__(url)
 
@@ -14,4 +15,8 @@ class HtmlStream(stream.Stream):
         """
         r = requests.get(url)
         self.data = r.content.decode()
+        self._counter = collections.Counter(self.data)
         return
+
+
+
