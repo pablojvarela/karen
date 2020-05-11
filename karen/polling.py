@@ -33,6 +33,6 @@ ARGS = {
 def ratios(cutoff, back):
     ARGS['ratios'] = cutoff
     ARGS['back'] = back
-    S = stats.Selfstats(DBPATH, ARGS)
-    S.calc_summary()
-    S.show_summary()
+    s = stats.Selfstats(DBPATH, ARGS)
+    s.calc_summary()
+    s.show_summary()

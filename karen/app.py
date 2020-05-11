@@ -39,7 +39,6 @@ def tests(args):
     if args == "start-selfspy":
         selfspy.main()
 
-
 class App():
     def __init__(self):
         pass
