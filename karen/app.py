@@ -1,7 +1,10 @@
+import time
+
 import karen.polling as polling
 import karen.pd as pd
 import selfspy
 
+VERSION = "alpha"
 
 BACK = ['1', 'w']
 ACTIVE_SECONDS = 180
@@ -35,3 +38,12 @@ def tests(args):
         pd.printvalues(VALUES)
     if args == "start-selfspy":
         selfspy.main()
+
+class App():
+    def __init__(self):
+        pass
+
+    def start(self):
+        while True:
+            print("Hi!")
+            time.sleep(2)
