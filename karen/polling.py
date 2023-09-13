@@ -1,5 +1,4 @@
-import os
-import selfspy.stats as stats
+import resources.selfspy.selfspy.stats as stats
 
 DATADIR = os.path.expanduser(stats.cfg.DATA_DIR)
 DBPATH = os.path.join(DATADIR, stats.cfg.DBNAME)

@@ -1,8 +1,8 @@
 import time
 
-import karen.polling as polling
-import karen.pd as pd
-import selfspy
+import karen.polling
+import karen.pd
+import resources.selfspy.selfspy
 
 VERSION = "alpha"
 

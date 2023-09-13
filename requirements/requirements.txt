@@ -1,0 +1,6 @@
+-r ../resources/selfspy/requirements.txt
+
+pytest
+requests
+numpy
+ipdb

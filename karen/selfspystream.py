@@ -1,4 +1,4 @@
-from karen.stream import Stream
+from karen.karen.stream import Stream
 
 
 class SelfspyStream(Stream):

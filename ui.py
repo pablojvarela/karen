@@ -2,7 +2,7 @@ import tkinter as tk
 import multiprocessing
 import logging
 
-from karen import app as karenapp
+import karen.app as karenapp
 
 logging.basicConfig(level=logging.DEBUG)
 

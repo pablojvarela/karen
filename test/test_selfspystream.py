@@ -1,5 +1,5 @@
 import pytest
-from karen import selfspystream
+from karen.karen import selfspystream
 
 
 @pytest.mark.selfspystream

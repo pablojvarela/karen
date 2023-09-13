@@ -1,6 +1,6 @@
 import pytest
 import requests
-from karen import htmlstream
+from karen.karen import htmlstream
 
 URL = "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
 

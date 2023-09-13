@@ -1,6 +1,6 @@
 import collections
 import requests
-from karen import stream
+from karen.karen import stream as stream
 
 
 class HTMLStream(stream.Stream):
@@ -13,10 +13,6 @@ class HTMLStream(stream.Stream):
         :param url: the URL
         :return: list of characters
         """
-        r = requests.get(url)
-        self.data = r.content.decode()
-        self._counter = collections.Counter(self.data)
-        return
-
-
+        response = requests.get(url)
+        return response.content.decode()
 
